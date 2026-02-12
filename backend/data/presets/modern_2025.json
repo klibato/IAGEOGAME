@@ -1,0 +1,801 @@
+{
+  "id": "modern_2025",
+  "name": "Monde Moderne \u2014 2025",
+  "description": "Simulez le paysage g\u00e9opolitique actuel de 2025, marqu\u00e9 par la rivalit\u00e9 sino-am\u00e9ricaine, la guerre en Ukraine, les tensions au Moyen-Orient et les d\u00e9fis climatiques mondiaux. Prenez le contr\u00f4le d'une grande puissance et fa\u00e7onnez l'avenir du monde.",
+  "start_date": "2025-01-01",
+  "world_before": "Le monde entre en 2025 dans un \u00e9tat de tension g\u00e9n\u00e9ralis\u00e9e. La rivalit\u00e9 entre les \u00c9tats-Unis et la Chine s'est intensifi\u00e9e autour de Ta\u00efwan, du commerce technologique et de l'influence en Indo-Pacifique. La guerre en Ukraine, d\u00e9clench\u00e9e par l'invasion russe de f\u00e9vrier 2022, continue de faire rage malgr\u00e9 les appels r\u00e9p\u00e9t\u00e9s \u00e0 la paix, entra\u00eenant une crise \u00e9nerg\u00e9tique en Europe et un r\u00e9armement massif de l'OTAN. Au Moyen-Orient, le conflit isra\u00e9lo-palestinien a connu une escalade dramatique depuis octobre 2023, d\u00e9stabilisant toute la r\u00e9gion et impliquant l'Iran et ses proxies. Le changement climatique provoque des catastrophes naturelles de plus en plus fr\u00e9quentes, poussant les nations \u00e0 des engagements ambitieux mais souvent insuffisants. La mont\u00e9e des populismes, la d\u00e9sinformation num\u00e9rique et la fragmentation de l'ordre international fond\u00e9 sur les r\u00e8gles compl\u00e8tent ce tableau d'un monde au bord de la rupture.",
+  "simulation_rules": "R\u00e8gles sp\u00e9cifiques au sc\u00e9nario 2025 : (1) Dissuasion nucl\u00e9aire \u2014 Les puissances nucl\u00e9aires ne peuvent pas \u00eatre envahies directement sans risque d'escalade catastrophique. Toute attaque conventionnelle majeure contre une puissance nucl\u00e9aire d\u00e9clenche un avertissement de doctrine nucl\u00e9aire. (2) Interd\u00e9pendance \u00e9conomique \u2014 Les sanctions \u00e9conomiques ont un impact r\u00e9ciproque : sanctionner un partenaire commercial majeur affecte \u00e9galement l'\u00e9conomie du sanctionneur. Les cha\u00eenes d'approvisionnement mondiales cr\u00e9ent des vuln\u00e9rabilit\u00e9s mutuelles. (3) Guerre cyb\u00e9rn\u00e9tique \u2014 Les nations technologiquement avanc\u00e9es peuvent mener des op\u00e9rations cyber offensives pour d\u00e9stabiliser l'infrastructure ennemie sans d\u00e9claration de guerre formelle. (4) Influence des r\u00e9seaux sociaux \u2014 La d\u00e9sinformation et les campagnes d'influence peuvent affecter la stabilit\u00e9 interne des nations cibl\u00e9es. Les r\u00e9gimes autoritaires sont partiellement immunis\u00e9s mais les d\u00e9mocraties y sont vuln\u00e9rables. (5) Changement climatique \u2014 Des \u00e9v\u00e9nements climatiques al\u00e9atoires peuvent frapper n'importe quelle r\u00e9gion, r\u00e9duisant la production \u00e9conomique et la stabilit\u00e9. (6) Organisations internationales \u2014 L'ONU, l'OTAN, l'UE et les BRICS offrent des m\u00e9canismes de coop\u00e9ration et de pression diplomatique, mais leur efficacit\u00e9 d\u00e9pend de la coh\u00e9sion de leurs membres.",
+
+  "nations": {
+    "usa": {
+      "name": "\u00c9tats-Unis",
+      "color": "#3C3B6E",
+      "leader": "Joe Biden",
+      "government_type": "Federal Republic",
+      "description": "Premi\u00e8re puissance mondiale, les \u00c9tats-Unis font face \u00e0 une polarisation politique int\u00e9rieure sans pr\u00e9c\u00e9dent tout en maintenant leur r\u00f4le de leader de l'ordre international lib\u00e9ral. Leur supr\u00e9matie militaire reste incontest\u00e9e, mais la mont\u00e9e en puissance de la Chine et les divisions internes mettent \u00e0 l'\u00e9preuve leur capacit\u00e9 \u00e0 projeter leur influence.",
+      "military_strength": 95,
+      "economic_strength": 90,
+      "stability": 60,
+      "population": 335000000,
+      "tags": ["superpower", "nuclear_power", "nato_leader"],
+      "regions": ["USA"],
+      "battalions": [
+        {
+          "id": "usa_bat_1",
+          "name": "1st Armored Division",
+          "type": "armor",
+          "strength": 90,
+          "position": { "lat": 32.38, "lng": -106.48 },
+          "description": "Division blind\u00e9e d'\u00e9lite bas\u00e9e \u00e0 Fort Bliss, Texas."
+        },
+        {
+          "id": "usa_bat_2",
+          "name": "USS Gerald R. Ford Carrier Strike Group",
+          "type": "naval",
+          "strength": 95,
+          "position": { "lat": 36.95, "lng": -76.33 },
+          "description": "Groupe a\u00e9ronaval bas\u00e9 \u00e0 Norfolk, Virginie. Le porte-avions le plus avanc\u00e9 au monde."
+        },
+        {
+          "id": "usa_bat_3",
+          "name": "1st Fighter Wing (F-22 Raptor)",
+          "type": "air",
+          "strength": 92,
+          "position": { "lat": 37.08, "lng": -76.36 },
+          "description": "Escadre de chasse a\u00e9rienne d'\u00e9lite \u00e9quip\u00e9e de F-22 Raptor, bas\u00e9e \u00e0 Langley, Virginie."
+        }
+      ]
+    },
+
+    "china": {
+      "name": "Chine",
+      "color": "#DE2910",
+      "leader": "Xi Jinping",
+      "government_type": "One-Party State",
+      "description": "Deuxi\u00e8me puissance mondiale et rival strat\u00e9gique des \u00c9tats-Unis, la Chine poursuit sa mont\u00e9e en puissance militaire et \u00e9conomique sous la direction ferme de Xi Jinping. La question de Ta\u00efwan reste le point de friction le plus dangereux, tandis que l'initiative des Nouvelles Routes de la Soie \u00e9tend l'influence chinoise sur tous les continents.",
+      "military_strength": 85,
+      "economic_strength": 88,
+      "stability": 75,
+      "population": 1400000000,
+      "tags": ["superpower", "nuclear_power", "rising_power"],
+      "regions": ["CHN"],
+      "battalions": [
+        {
+          "id": "chn_bat_1",
+          "name": "72e Groupe d'arm\u00e9es",
+          "type": "armor",
+          "strength": 82,
+          "position": { "lat": 30.52, "lng": 114.35 },
+          "description": "Groupe d'arm\u00e9es m\u00e9canis\u00e9 du Commandement du Th\u00e9\u00e2tre central, bas\u00e9 \u00e0 Wuhan."
+        },
+        {
+          "id": "chn_bat_2",
+          "name": "Flotte de la Mer du Sud",
+          "type": "naval",
+          "strength": 80,
+          "position": { "lat": 18.25, "lng": 109.50 },
+          "description": "Flotte principale de la marine chinoise en mer de Chine m\u00e9ridionale, bas\u00e9e \u00e0 Yulin, Ha\u00efnan."
+        },
+        {
+          "id": "chn_bat_3",
+          "name": "Force a\u00e9rienne du Th\u00e9\u00e2tre Est",
+          "type": "air",
+          "strength": 78,
+          "position": { "lat": 31.23, "lng": 121.47 },
+          "description": "Force a\u00e9rienne strat\u00e9gique \u00e9quip\u00e9e de J-20, orient\u00e9e vers le d\u00e9troit de Ta\u00efwan."
+        }
+      ]
+    },
+
+    "russia": {
+      "name": "Russie",
+      "color": "#0039A6",
+      "leader": "Vladimir Putin",
+      "government_type": "Federal Semi-Presidential Republic",
+      "description": "Engag\u00e9e dans une guerre co\u00fbteuse en Ukraine depuis 2022, la Russie fait face \u00e0 un isolement international croissant et \u00e0 des sanctions \u00e9conomiques s\u00e9v\u00e8res. Malgr\u00e9 cela, elle conserve le plus grand arsenal nucl\u00e9aire au monde et reste un acteur incontournable de la g\u00e9opolitique mondiale gr\u00e2ce \u00e0 ses ressources \u00e9nerg\u00e9tiques.",
+      "military_strength": 78,
+      "economic_strength": 45,
+      "stability": 55,
+      "population": 144000000,
+      "tags": ["nuclear_power", "energy_exporter", "revisionist"],
+      "regions": ["RUS"],
+      "battalions": [
+        {
+          "id": "rus_bat_1",
+          "name": "1re Division blind\u00e9e de la Garde Taman",
+          "type": "armor",
+          "strength": 75,
+          "position": { "lat": 55.75, "lng": 37.62 },
+          "description": "Division blind\u00e9e d'\u00e9lite de la Garde, stationn\u00e9e pr\u00e8s de Moscou."
+        },
+        {
+          "id": "rus_bat_2",
+          "name": "Flotte du Nord",
+          "type": "naval",
+          "strength": 72,
+          "position": { "lat": 69.08, "lng": 33.42 },
+          "description": "Principale flotte strat\u00e9gique russe bas\u00e9e \u00e0 Severomorsk, abritant des sous-marins nucl\u00e9aires."
+        },
+        {
+          "id": "rus_bat_3",
+          "name": "Groupement de forces en Ukraine",
+          "type": "infantry",
+          "strength": 65,
+          "position": { "lat": 48.70, "lng": 37.56 },
+          "description": "Forces exp\u00e9ditionnaires russes engag\u00e9es sur le front du Donbass."
+        }
+      ]
+    },
+
+    "france": {
+      "name": "France",
+      "color": "#002395",
+      "leader": "Emmanuel Macron",
+      "government_type": "Semi-Presidential Republic",
+      "description": "Puissance nucl\u00e9aire et membre permanent du Conseil de s\u00e9curit\u00e9 de l'ONU, la France joue un r\u00f4le cl\u00e9 dans la diplomatie europ\u00e9enne et internationale. Confront\u00e9e \u00e0 des tensions sociales internes et \u00e0 un recul de son influence en Afrique, elle cherche \u00e0 renforcer l'autonomie strat\u00e9gique europ\u00e9enne.",
+      "military_strength": 65,
+      "economic_strength": 70,
+      "stability": 50,
+      "population": 68000000,
+      "tags": ["nuclear_power", "eu_member", "un_security_council"],
+      "regions": ["FRA"],
+      "battalions": [
+        {
+          "id": "fra_bat_1",
+          "name": "2e Brigade blind\u00e9e",
+          "type": "armor",
+          "strength": 62,
+          "position": { "lat": 48.86, "lng": 2.35 },
+          "description": "Brigade blind\u00e9e de l'Arm\u00e9e de terre, stationn\u00e9e en r\u00e9gion parisienne."
+        },
+        {
+          "id": "fra_bat_2",
+          "name": "Groupe a\u00e9ronaval Charles de Gaulle",
+          "type": "naval",
+          "strength": 68,
+          "position": { "lat": 43.10, "lng": 5.93 },
+          "description": "Unique porte-avions fran\u00e7ais, bas\u00e9 \u00e0 Toulon. Projection de puissance en M\u00e9diterran\u00e9e."
+        },
+        {
+          "id": "fra_bat_3",
+          "name": "Escadron de chasse Rafale 2/30 Normandie-Niemen",
+          "type": "air",
+          "strength": 64,
+          "position": { "lat": 47.27, "lng": 5.09 },
+          "description": "Escadron de chasse \u00e9quip\u00e9 de Rafale, bas\u00e9 \u00e0 Mont-de-Marsan."
+        }
+      ]
+    },
+
+    "uk": {
+      "name": "Royaume-Uni",
+      "color": "#012169",
+      "leader": "Keir Starmer",
+      "government_type": "Constitutional Monarchy",
+      "description": "Apr\u00e8s le Brexit, le Royaume-Uni cherche \u00e0 red\u00e9finir son r\u00f4le sur la sc\u00e8ne mondiale en renfor\u00e7ant ses liens avec les \u00c9tats-Unis et le Commonwealth. Puissance nucl\u00e9aire et si\u00e8ge permanent au Conseil de s\u00e9curit\u00e9, il reste un acteur militaire de premier plan malgr\u00e9 des d\u00e9fis \u00e9conomiques post-Brexit.",
+      "military_strength": 68,
+      "economic_strength": 72,
+      "stability": 55,
+      "population": 67000000,
+      "tags": ["nuclear_power", "island_nation"],
+      "regions": ["GBR"],
+      "battalions": [
+        {
+          "id": "gbr_bat_1",
+          "name": "1st Armoured Infantry Brigade",
+          "type": "infantry",
+          "strength": 65,
+          "position": { "lat": 51.27, "lng": -1.09 },
+          "description": "Brigade d'infanterie m\u00e9canis\u00e9e bas\u00e9e \u00e0 Tidworth, Wiltshire."
+        },
+        {
+          "id": "gbr_bat_2",
+          "name": "HMS Queen Elizabeth Carrier Strike Group",
+          "type": "naval",
+          "strength": 70,
+          "position": { "lat": 50.80, "lng": -1.10 },
+          "description": "Groupe a\u00e9ronaval centr\u00e9 sur le HMS Queen Elizabeth, bas\u00e9 \u00e0 Portsmouth."
+        }
+      ]
+    },
+
+    "germany": {
+      "name": "Allemagne",
+      "color": "#FFCC00",
+      "leader": "Olaf Scholz",
+      "government_type": "Federal Parliamentary Republic",
+      "description": "Premi\u00e8re puissance \u00e9conomique europ\u00e9enne, l'Allemagne a entam\u00e9 un tournant historique dans sa politique de d\u00e9fense (Zeitenwende) suite \u00e0 l'invasion russe de l'Ukraine. Elle investit massivement dans son arm\u00e9e tout en g\u00e9rant une transition \u00e9nerg\u00e9tique complexe apr\u00e8s sa rupture avec le gaz russe.",
+      "military_strength": 55,
+      "economic_strength": 78,
+      "stability": 60,
+      "population": 84000000,
+      "tags": ["eu_member", "economic_power"],
+      "regions": ["DEU"],
+      "battalions": [
+        {
+          "id": "deu_bat_1",
+          "name": "Panzerbrigade 9",
+          "type": "armor",
+          "strength": 52,
+          "position": { "lat": 52.26, "lng": 10.52 },
+          "description": "Brigade blind\u00e9e \u00e9quip\u00e9e de Leopard 2, bas\u00e9e \u00e0 Munster, Basse-Saxe."
+        },
+        {
+          "id": "deu_bat_2",
+          "name": "Taktisches Luftwaffengeschwader 74",
+          "type": "air",
+          "strength": 50,
+          "position": { "lat": 48.23, "lng": 11.81 },
+          "description": "Escadre de chasse \u00e9quip\u00e9e d'Eurofighter Typhoon, bas\u00e9e \u00e0 Neuburg an der Donau."
+        }
+      ]
+    },
+
+    "india": {
+      "name": "Inde",
+      "color": "#FF9933",
+      "leader": "Narendra Modi",
+      "government_type": "Federal Parliamentary Republic",
+      "description": "Nation la plus peupl\u00e9e du monde, l'Inde s'affirme comme une puissance majeure du XXIe si\u00e8cle. Elle pratique une diplomatie multi-align\u00e9e, entretenant des relations avec la Russie tout en se rapprochant des \u00c9tats-Unis face \u00e0 la menace chinoise. Son \u00e9conomie conna\u00eet une croissance spectaculaire.",
+      "military_strength": 72,
+      "economic_strength": 65,
+      "stability": 58,
+      "population": 1430000000,
+      "tags": ["nuclear_power", "rising_power"],
+      "regions": ["IND"],
+      "battalions": [
+        {
+          "id": "ind_bat_1",
+          "name": "Strike Corps - I Corps",
+          "type": "armor",
+          "strength": 70,
+          "position": { "lat": 28.61, "lng": 77.21 },
+          "description": "Corps blind\u00e9 d'assaut de l'arm\u00e9e indienne, stationn\u00e9 dans la r\u00e9gion de Delhi."
+        },
+        {
+          "id": "ind_bat_2",
+          "name": "Flotte de l'Est - INS Vikramaditya",
+          "type": "naval",
+          "strength": 65,
+          "position": { "lat": 17.69, "lng": 83.22 },
+          "description": "Flotte orientale de la marine indienne bas\u00e9e \u00e0 Visakhapatnam."
+        },
+        {
+          "id": "ind_bat_3",
+          "name": "17e Corps de montagne (Himalaya)",
+          "type": "infantry",
+          "strength": 68,
+          "position": { "lat": 27.33, "lng": 88.62 },
+          "description": "Corps sp\u00e9cialis\u00e9 dans le combat en haute altitude, d\u00e9ploy\u00e9 face \u00e0 la fronti\u00e8re chinoise."
+        }
+      ]
+    },
+
+    "japan": {
+      "name": "Japon",
+      "color": "#BC002D",
+      "leader": "Shigeru Ishiba",
+      "government_type": "Constitutional Monarchy",
+      "description": "Troisi\u00e8me puissance \u00e9conomique mondiale, le Japon a consid\u00e9rablement renforc\u00e9 ses capacit\u00e9s de d\u00e9fense face aux menaces chinoises et nord-cor\u00e9ennes. Alli\u00e9 cl\u00e9 des \u00c9tats-Unis en Indo-Pacifique, il d\u00e9veloppe ses forces d'autod\u00e9fense tout en g\u00e9rant les d\u00e9fis d'une population vieillissante.",
+      "military_strength": 60,
+      "economic_strength": 75,
+      "stability": 70,
+      "population": 124000000,
+      "tags": ["economic_power", "us_ally"],
+      "regions": ["JPN"],
+      "battalions": [
+        {
+          "id": "jpn_bat_1",
+          "name": "7e Division blind\u00e9e (Hokkaido)",
+          "type": "armor",
+          "strength": 58,
+          "position": { "lat": 42.92, "lng": 143.20 },
+          "description": "Division blind\u00e9e des Forces d'autod\u00e9fense, stationn\u00e9e \u00e0 Hokkaido."
+        },
+        {
+          "id": "jpn_bat_2",
+          "name": "Flotte d'autod\u00e9fense maritime - Groupe Izumo",
+          "type": "naval",
+          "strength": 62,
+          "position": { "lat": 35.29, "lng": 139.68 },
+          "description": "Groupe naval centr\u00e9 sur le JS Izumo, bas\u00e9 \u00e0 Yokosuka."
+        }
+      ]
+    },
+
+    "brazil": {
+      "name": "Br\u00e9sil",
+      "color": "#009C3B",
+      "leader": "Lula da Silva",
+      "government_type": "Federal Presidential Republic",
+      "description": "G\u00e9ant d'Am\u00e9rique du Sud et membre des BRICS, le Br\u00e9sil cherche \u00e0 retrouver son influence diplomatique sous la pr\u00e9sidence de Lula. Riche en ressources naturelles et gardien de l'Amazonie, il fait face \u00e0 des d\u00e9fis de d\u00e9veloppement \u00e9conomique et de coh\u00e9sion sociale.",
+      "military_strength": 45,
+      "economic_strength": 55,
+      "stability": 50,
+      "population": 216000000,
+      "tags": ["regional_power", "brics"],
+      "regions": ["BRA"],
+      "battalions": [
+        {
+          "id": "bra_bat_1",
+          "name": "1re Brigade d'infanterie blind\u00e9e",
+          "type": "armor",
+          "strength": 42,
+          "position": { "lat": -22.91, "lng": -43.17 },
+          "description": "Brigade blind\u00e9e de l'arm\u00e9e br\u00e9silienne, stationn\u00e9e \u00e0 Rio de Janeiro."
+        },
+        {
+          "id": "bra_bat_2",
+          "name": "Esquadra - NAM Atl\u00e2ntico",
+          "type": "naval",
+          "strength": 40,
+          "position": { "lat": -22.89, "lng": -43.13 },
+          "description": "Flotte principale de la marine br\u00e9silienne, bas\u00e9e \u00e0 Rio de Janeiro."
+        }
+      ]
+    },
+
+    "turkey": {
+      "name": "Turquie",
+      "color": "#E30A17",
+      "leader": "Recep Tayyip Erdogan",
+      "government_type": "Presidential Republic",
+      "description": "Situ\u00e9e au carrefour de l'Europe et de l'Asie, la Turquie joue un r\u00f4le strat\u00e9gique majeur en tant que membre de l'OTAN tout en maintenant des relations ind\u00e9pendantes avec la Russie et d'autres acteurs r\u00e9gionaux. Son industrie de d\u00e9fense nationale conna\u00eet un essor remarquable, notamment avec ses drones Bayraktar.",
+      "military_strength": 62,
+      "economic_strength": 50,
+      "stability": 45,
+      "population": 85000000,
+      "tags": ["nato_member", "regional_power"],
+      "regions": ["TUR"],
+      "battalions": [
+        {
+          "id": "tur_bat_1",
+          "name": "2e Arm\u00e9e (Sud-Est)",
+          "type": "infantry",
+          "strength": 60,
+          "position": { "lat": 39.92, "lng": 32.85 },
+          "description": "Arm\u00e9e responsable du flanc sud-est de la Turquie, QG \u00e0 Ankara."
+        },
+        {
+          "id": "tur_bat_2",
+          "name": "Flotte turque - Commandement naval",
+          "type": "naval",
+          "strength": 55,
+          "position": { "lat": 40.68, "lng": 29.42 },
+          "description": "Commandement naval turc, bas\u00e9 \u00e0 Gol\u00e7\u00fck, contr\u00f4lant les d\u00e9troits strat\u00e9giques."
+        },
+        {
+          "id": "tur_bat_3",
+          "name": "Escadre de drones Bayraktar TB2",
+          "type": "air",
+          "strength": 58,
+          "position": { "lat": 39.95, "lng": 32.69 },
+          "description": "Unit\u00e9 de drones de combat, symbole de la mont\u00e9e en puissance de l'industrie de d\u00e9fense turque."
+        }
+      ]
+    },
+
+    "iran": {
+      "name": "Iran",
+      "color": "#239F40",
+      "leader": "Masoud Pezeshkian",
+      "government_type": "Islamic Republic",
+      "description": "R\u00e9publique islamique dot\u00e9e d'une influence r\u00e9gionale consid\u00e9rable \u00e0 travers ses proxies (Hezbollah, milices en Irak et au Y\u00e9men), l'Iran poursuit son programme nucl\u00e9aire sous de fortes sanctions internationales. La tension avec Isra\u00ebl et les \u00c9tats-Unis reste un facteur majeur d'instabilit\u00e9 au Moyen-Orient.",
+      "military_strength": 58,
+      "economic_strength": 35,
+      "stability": 40,
+      "population": 88000000,
+      "tags": ["nuclear_aspirant", "regional_power"],
+      "regions": ["IRN"],
+      "battalions": [
+        {
+          "id": "irn_bat_1",
+          "name": "Corps des Gardiens de la R\u00e9volution (Pasdaran)",
+          "type": "infantry",
+          "strength": 60,
+          "position": { "lat": 35.69, "lng": 51.39 },
+          "description": "Force militaire d'\u00e9lite id\u00e9ologique, pi\u00e8ce ma\u00eetresse du r\u00e9gime iranien, bas\u00e9e \u00e0 T\u00e9h\u00e9ran."
+        },
+        {
+          "id": "irn_bat_2",
+          "name": "Force a\u00e9rospatiale des Pasdaran",
+          "type": "air",
+          "strength": 55,
+          "position": { "lat": 33.52, "lng": 52.06 },
+          "description": "Force de missiles balistiques et de drones, r\u00e9partie sur plusieurs bases souterraines."
+        },
+        {
+          "id": "irn_bat_3",
+          "name": "Marine des Gardiens de la R\u00e9volution",
+          "type": "naval",
+          "strength": 48,
+          "position": { "lat": 27.18, "lng": 56.27 },
+          "description": "Force navale asym\u00e9trique contr\u00f4lant le d\u00e9troit d'Ormuz, bas\u00e9e \u00e0 Bandar Abbas."
+        }
+      ]
+    },
+
+    "ukraine": {
+      "name": "Ukraine",
+      "color": "#0057B7",
+      "leader": "Volodymyr Zelensky",
+      "government_type": "Semi-Presidential Republic",
+      "description": "En guerre contre la Russie depuis 2022, l'Ukraine d\u00e9fend sa souverainet\u00e9 et son int\u00e9grit\u00e9 territoriale avec le soutien massif de l'Occident. Malgr\u00e9 des pertes humaines et \u00e9conomiques consid\u00e9rables, la r\u00e9silience ukrainienne est devenue un symbole de r\u00e9sistance face \u00e0 l'agression imp\u00e9rialiste.",
+      "military_strength": 55,
+      "economic_strength": 25,
+      "stability": 35,
+      "population": 37000000,
+      "tags": ["conflict_zone", "western_aligned"],
+      "regions": ["UKR"],
+      "battalions": [
+        {
+          "id": "ukr_bat_1",
+          "name": "47e Brigade m\u00e9canis\u00e9e s\u00e9par\u00e9e \"Magura\"",
+          "type": "armor",
+          "strength": 52,
+          "position": { "lat": 48.46, "lng": 35.04 },
+          "description": "Brigade blind\u00e9e \u00e9quip\u00e9e de Leopard 2 et Bradley, engag\u00e9e sur le front est."
+        },
+        {
+          "id": "ukr_bat_2",
+          "name": "3e Brigade d'assaut s\u00e9par\u00e9e",
+          "type": "infantry",
+          "strength": 55,
+          "position": { "lat": 48.90, "lng": 37.80 },
+          "description": "Brigade d'infanterie d'\u00e9lite, une des unit\u00e9s les plus aguerries du front du Donbass."
+        },
+        {
+          "id": "ukr_bat_3",
+          "name": "Force a\u00e9rienne ukrainienne (F-16)",
+          "type": "air",
+          "strength": 45,
+          "position": { "lat": 50.45, "lng": 30.52 },
+          "description": "Force a\u00e9rienne en cours de modernisation avec des F-16 fournis par les alli\u00e9s occidentaux."
+        }
+      ]
+    }
+  },
+
+  "regions": {
+    "USA": {
+      "name": "\u00c9tats-Unis",
+      "controlled_by": "usa",
+      "geojson_feature_id": "USA",
+      "population": 335000000,
+      "terrain_type": "varied",
+      "strategic_value": 10,
+      "resources": ["oil", "technology", "agriculture", "natural_gas", "minerals"],
+      "has_capital": true
+    },
+    "CHN": {
+      "name": "Chine",
+      "controlled_by": "china",
+      "geojson_feature_id": "CHN",
+      "population": 1400000000,
+      "terrain_type": "varied",
+      "strategic_value": 10,
+      "resources": ["rare_earth", "technology", "manufacturing", "coal", "agriculture"],
+      "has_capital": true
+    },
+    "RUS": {
+      "name": "Russie",
+      "controlled_by": "russia",
+      "geojson_feature_id": "RUS",
+      "population": 144000000,
+      "terrain_type": "tundra_forest",
+      "strategic_value": 9,
+      "resources": ["oil", "natural_gas", "minerals", "nuclear_materials", "timber"],
+      "has_capital": true
+    },
+    "FRA": {
+      "name": "France",
+      "controlled_by": "france",
+      "geojson_feature_id": "FRA",
+      "population": 68000000,
+      "terrain_type": "temperate",
+      "strategic_value": 8,
+      "resources": ["agriculture", "technology", "nuclear_energy", "wine", "aerospace"],
+      "has_capital": true
+    },
+    "GBR": {
+      "name": "Royaume-Uni",
+      "controlled_by": "uk",
+      "geojson_feature_id": "GBR",
+      "population": 67000000,
+      "terrain_type": "island_temperate",
+      "strategic_value": 8,
+      "resources": ["technology", "finance", "oil", "natural_gas"],
+      "has_capital": true
+    },
+    "DEU": {
+      "name": "Allemagne",
+      "controlled_by": "germany",
+      "geojson_feature_id": "DEU",
+      "population": 84000000,
+      "terrain_type": "temperate",
+      "strategic_value": 8,
+      "resources": ["technology", "manufacturing", "automotive", "chemicals"],
+      "has_capital": true
+    },
+    "IND": {
+      "name": "Inde",
+      "controlled_by": "india",
+      "geojson_feature_id": "IND",
+      "population": 1430000000,
+      "terrain_type": "varied",
+      "strategic_value": 9,
+      "resources": ["technology", "agriculture", "minerals", "coal", "textiles"],
+      "has_capital": true
+    },
+    "JPN": {
+      "name": "Japon",
+      "controlled_by": "japan",
+      "geojson_feature_id": "JPN",
+      "population": 124000000,
+      "terrain_type": "island_mountainous",
+      "strategic_value": 8,
+      "resources": ["technology", "manufacturing", "automotive", "electronics"],
+      "has_capital": true
+    },
+    "BRA": {
+      "name": "Br\u00e9sil",
+      "controlled_by": "brazil",
+      "geojson_feature_id": "BRA",
+      "population": 216000000,
+      "terrain_type": "tropical",
+      "strategic_value": 7,
+      "resources": ["agriculture", "oil", "minerals", "iron_ore", "timber"],
+      "has_capital": true
+    },
+    "TUR": {
+      "name": "Turquie",
+      "controlled_by": "turkey",
+      "geojson_feature_id": "TUR",
+      "population": 85000000,
+      "terrain_type": "semi_arid",
+      "strategic_value": 8,
+      "resources": ["agriculture", "textiles", "minerals", "defense_industry"],
+      "has_capital": true
+    },
+    "IRN": {
+      "name": "Iran",
+      "controlled_by": "iran",
+      "geojson_feature_id": "IRN",
+      "population": 88000000,
+      "terrain_type": "arid_mountainous",
+      "strategic_value": 8,
+      "resources": ["oil", "natural_gas", "minerals", "petrochemicals"],
+      "has_capital": true
+    },
+    "UKR": {
+      "name": "Ukraine",
+      "controlled_by": "ukraine",
+      "geojson_feature_id": "UKR",
+      "population": 37000000,
+      "terrain_type": "steppe",
+      "strategic_value": 7,
+      "resources": ["agriculture", "minerals", "iron_ore", "sunflower_oil"],
+      "has_capital": true
+    }
+  },
+
+  "initial_relations": {
+    "usa-uk": {
+      "status": "allied",
+      "value": 90,
+      "description": "Relation sp\u00e9ciale historique anglo-am\u00e9ricaine, renforc\u00e9e par la coop\u00e9ration en Ukraine."
+    },
+    "usa-france": {
+      "status": "allied",
+      "value": 80,
+      "description": "Alli\u00e9s au sein de l'OTAN avec des divergences occasionnelles sur l'autonomie strat\u00e9gique europ\u00e9enne."
+    },
+    "usa-germany": {
+      "status": "allied",
+      "value": 78,
+      "description": "Alliance solide au sein de l'OTAN, renforc\u00e9e depuis le Zeitenwende allemand."
+    },
+    "usa-japan": {
+      "status": "allied",
+      "value": 88,
+      "description": "Pierre angulaire de la s\u00e9curit\u00e9 en Indo-Pacifique, alliance renforc\u00e9e face \u00e0 la Chine."
+    },
+    "usa-ukraine": {
+      "status": "friendly",
+      "value": 75,
+      "description": "Soutien militaire et financier massif des \u00c9tats-Unis \u00e0 l'Ukraine en guerre."
+    },
+    "usa-india": {
+      "status": "friendly",
+      "value": 65,
+      "description": "Partenariat strat\u00e9gique croissant via le Quad, temp\u00e9r\u00e9 par le non-alignement indien."
+    },
+    "usa-brazil": {
+      "status": "neutral",
+      "value": 50,
+      "description": "Relations correctes mais distantes, Lula privil\u00e9giant une diplomatie multi-align\u00e9e."
+    },
+    "usa-turkey": {
+      "status": "tense",
+      "value": 35,
+      "description": "Alliance OTAN compliqu\u00e9e par l'achat de S-400 russes et la politique ind\u00e9pendante d'Erdogan."
+    },
+    "usa-china": {
+      "status": "tense",
+      "value": 25,
+      "description": "Rivalit\u00e9 strat\u00e9gique majeure sur Ta\u00efwan, le commerce, la technologie et l'Indo-Pacifique."
+    },
+    "usa-russia": {
+      "status": "hostile",
+      "value": 10,
+      "description": "Relations au plus bas depuis la Guerre froide en raison de l'invasion de l'Ukraine."
+    },
+    "usa-iran": {
+      "status": "hostile",
+      "value": 8,
+      "description": "Hostilit\u00e9 ouverte li\u00e9e au programme nucl\u00e9aire iranien et au soutien aux proxies r\u00e9gionaux."
+    },
+    "china-russia": {
+      "status": "friendly",
+      "value": 72,
+      "description": "Partenariat strat\u00e9gique 'sans limites' renforc\u00e9 par l'opposition commune \u00e0 l'h\u00e9g\u00e9monie am\u00e9ricaine."
+    },
+    "china-india": {
+      "status": "tense",
+      "value": 30,
+      "description": "Tensions frontalières persistantes dans l'Himalaya et rivalit\u00e9 g\u00e9opolitique en Asie."
+    },
+    "china-japan": {
+      "status": "tense",
+      "value": 28,
+      "description": "Contentieux territorial sur les \u00eeles Senkaku/Diaoyu et rivalit\u00e9 historique en Asie de l'Est."
+    },
+    "china-iran": {
+      "status": "friendly",
+      "value": 60,
+      "description": "Partenariat \u00e9conomique et strat\u00e9gique, la Chine \u00e9tant le principal acheteur de p\u00e9trole iranien."
+    },
+    "russia-ukraine": {
+      "status": "at_war",
+      "value": 0,
+      "description": "Guerre ouverte depuis l'invasion russe de f\u00e9vrier 2022."
+    },
+    "russia-france": {
+      "status": "hostile",
+      "value": 12,
+      "description": "Relations gel\u00e9es depuis l'invasion de l'Ukraine, malgr\u00e9 les tentatives de dialogue de Macron."
+    },
+    "russia-uk": {
+      "status": "hostile",
+      "value": 8,
+      "description": "Relations tr\u00e8s tendues, le Royaume-Uni \u00e9tant l'un des plus fervents soutiens de l'Ukraine."
+    },
+    "russia-germany": {
+      "status": "hostile",
+      "value": 15,
+      "description": "Rupture historique apr\u00e8s des d\u00e9cennies de coop\u00e9ration \u00e9nerg\u00e9tique (Nord Stream)."
+    },
+    "russia-turkey": {
+      "status": "neutral",
+      "value": 45,
+      "description": "Relations pragmatiques malgr\u00e9 des int\u00e9r\u00eats divergents en Syrie et dans le Caucase."
+    },
+    "russia-iran": {
+      "status": "friendly",
+      "value": 65,
+      "description": "Coop\u00e9ration militaire renforc\u00e9e, l'Iran fournissant des drones pour la guerre en Ukraine."
+    },
+    "france-uk": {
+      "status": "allied",
+      "value": 75,
+      "description": "Coop\u00e9ration militaire \u00e9troite (Trait\u00e9s de Lancaster House) malgr\u00e9 les frictions post-Brexit."
+    },
+    "france-germany": {
+      "status": "allied",
+      "value": 82,
+      "description": "Moteur historique de l'int\u00e9gration europ\u00e9enne, couple franco-allemand parfois dissonant."
+    },
+    "uk-germany": {
+      "status": "friendly",
+      "value": 68,
+      "description": "Relations post-Brexit en reconstruction, coop\u00e9ration renforc\u00e9e sur la d\u00e9fense."
+    },
+    "uk-ukraine": {
+      "status": "friendly",
+      "value": 78,
+      "description": "Le Royaume-Uni est l'un des premiers et plus constants soutiens militaires de l'Ukraine."
+    },
+    "france-ukraine": {
+      "status": "friendly",
+      "value": 70,
+      "description": "Soutien fran\u00e7ais croissant \u00e0 l'Ukraine, y compris livraisons de missiles SCALP."
+    },
+    "germany-ukraine": {
+      "status": "friendly",
+      "value": 68,
+      "description": "Soutien allemand significatif apr\u00e8s des h\u00e9sitations initiales, livraisons de Leopard 2."
+    },
+    "india-russia": {
+      "status": "friendly",
+      "value": 68,
+      "description": "Partenariat historique maintenu, l'Inde achetant massivement du p\u00e9trole russe \u00e0 prix r\u00e9duit."
+    },
+    "india-japan": {
+      "status": "friendly",
+      "value": 70,
+      "description": "Partenariat strat\u00e9gique croissant au sein du Quad face \u00e0 l'expansion chinoise."
+    },
+    "turkey-ukraine": {
+      "status": "friendly",
+      "value": 60,
+      "description": "Soutien turc via les drones Bayraktar, tout en maintenant le dialogue avec Moscou."
+    },
+    "iran-ukraine": {
+      "status": "hostile",
+      "value": 12,
+      "description": "L'Ukraine accuse l'Iran de fournir des drones Shahed \u00e0 la Russie."
+    },
+    "brazil-china": {
+      "status": "friendly",
+      "value": 62,
+      "description": "Partenariat commercial majeur au sein des BRICS, la Chine \u00e9tant le premier partenaire du Br\u00e9sil."
+    },
+    "brazil-russia": {
+      "status": "neutral",
+      "value": 48,
+      "description": "Relations maintenues au sein des BRICS malgr\u00e9 la pression occidentale."
+    },
+    "japan-uk": {
+      "status": "friendly",
+      "value": 72,
+      "description": "Coop\u00e9ration de d\u00e9fense renforc\u00e9e, programme commun d'avion de chasse GCAP."
+    },
+    "turkey-iran": {
+      "status": "tense",
+      "value": 32,
+      "description": "Rivalit\u00e9 r\u00e9gionale au Moyen-Orient malgr\u00e9 des int\u00e9r\u00eats \u00e9conomiques communs."
+    }
+  },
+
+  "initial_wars": [
+    {
+      "name": "Guerre russo-ukrainienne",
+      "description": "Conflit arm\u00e9 majeur d\u00e9clench\u00e9 par l'invasion russe de l'Ukraine le 24 f\u00e9vrier 2022. La Russie occupe des portions significatives de l'est et du sud de l'Ukraine, tandis que Kiev m\u00e8ne des contre-offensives avec le soutien mat\u00e9riel de l'Occident.",
+      "attackers": ["russia"],
+      "defenders": ["ukraine"],
+      "start_date": "2022-02-24",
+      "intensity": "high"
+    }
+  ],
+
+  "initial_alliances": [
+    {
+      "name": "OTAN (NATO)",
+      "description": "Organisation du Trait\u00e9 de l'Atlantique Nord \u2014 Alliance militaire d\u00e9fensive occidentale, renforc\u00e9e et \u00e9largie suite \u00e0 l'invasion russe de l'Ukraine.",
+      "members": ["usa", "uk", "france", "germany", "turkey"],
+      "type": "military",
+      "founded": "1949-04-04"
+    },
+    {
+      "name": "BRICS",
+      "description": "Bloc \u00e9conomique et politique r\u00e9unissant des puissances \u00e9mergentes et contestant l'ordre international lib\u00e9ral domin\u00e9 par l'Occident.",
+      "members": ["china", "russia", "india", "brazil", "iran"],
+      "type": "economic_political",
+      "founded": "2009-06-16"
+    },
+    {
+      "name": "Union Europ\u00e9enne (d\u00e9fense)",
+      "description": "Coop\u00e9ration de d\u00e9fense au sein de l'Union europ\u00e9enne, avec l'objectif d'une autonomie strat\u00e9gique accrue.",
+      "members": ["france", "germany"],
+      "type": "political_economic",
+      "founded": "1993-11-01"
+    },
+    {
+      "name": "Quad (Dialogue de s\u00e9curit\u00e9 quadrilat\u00e9ral)",
+      "description": "Forum strat\u00e9gique informel en Indo-Pacifique visant \u00e0 contrebalancer l'influence chinoise.",
+      "members": ["usa", "india", "japan"],
+      "type": "strategic_partnership",
+      "founded": "2007-05-25"
+    }
+  ]
+}
