@@ -1,10 +1,6 @@
-version: '3.8'
-
 services:
   backend:
-    build:
-      context: .
-      dockerfile: backend/Dockerfile
+    build: ./backend
     ports:
       - "8000:8000"
     environment:
@@ -21,5 +17,3 @@ services:
       - "3000:3000"
     depends_on:
       - backend
-    environment:
-      - VITE_API_URL=http://backend:8000
